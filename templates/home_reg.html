@@ -1,0 +1,59 @@
+{% extends 'layoutreg1.html' %}
+
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+
+
+{% block content %}
+
+
+<div class="container">
+
+
+ <div class="row">
+
+
+ <div class="col-md-6 col-md-offset-3">
+
+
+Home page
+
+
+{% if session['username'] %}
+
+
+Welcome {{ session['username'] }}
+
+
+{% else %}
+
+
+Not login
+
+
+{% endif %}
+
+
+ </div>
+
+
+ </div>
+
+
+</div>
+
+
+{% endblock %}
+
+ </div>
+
+
+</div>
+
+
+

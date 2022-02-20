@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>title page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/website_style(home).css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/newblack.css') }}">
+</head>
+<body>
+<div class="banner">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!-- Brand -->
+		<a class="navbar-brand" href="#">Home</a>
+	  
+		<!-- Links -->
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link" href="/newblack">Black list</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/phishing">What is phishing site?</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/raiting">Raiting</a>
+		  </li>
+	  
+		  
+		  <li class="new1">
+			<a class="nav-link" href="/register">Register</a>
+		  </li>
+		  <li class="new2">
+			<a class="nav-link" href="/login">Log in</a>
+		  </li>
+		</ul>
+	  </nav>
+	<h1 class="text1">Found a website <br>but not sure about security?</br></h1>
+	<h1 class="text2">Check out the website below!</h1>
+		<div class="banner2">
+			<h1 class="text3">Put website's adress here!</h1>
+			<div class="check_form">
+			<form action="/predict" method="POST">
+			<input type="text" name="check" class="validate" style="width: 500px; height: 30px;">
+				<button type="submit" value="predict">Check!</button>
+			</form>
+			</div>
+		</div>
+</div>
+<h1 class="text4">{{res}}</h1>
+</body>
+</html>
