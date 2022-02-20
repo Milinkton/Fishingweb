@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.new2 {
+	position: absolute;
+	left: 90%
+}
+.new1 {
+	position: absolute;
+	left: 80%
+}
+.nav-link {
+	font-size: 20px;
+}
+
+.general {
+	color: #A9A9A9;
+	position: absolute;
+	top: 10%;
+}
+.image {
+	width: 100%;
+	height: 550vh;
+	background: url(90698.jpg);
+	background-size: cover;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .txt {
+	max-width: 80%;
+}
+section .txt h2 {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 3em;
+	transition: 0.5s;	
+}
+section .txt h2:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: #e02bff;*/
+	transform-origin: right;
+	transition: 0.5s;
+}
+section .txt h3 {
+	position: relative;
+	margin: 5px 0 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 2em;
+	transition: 0.5s;
+	transform-origin: left;
+	transform: scaleX(1);
+}
+section .txt h3:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	transform-origin: right;
+	transition: 0.5s;
+}
+section .txt a {
+	position: relative;
+	background: #fff;
+	color: #262626;
+	padding: 15px 30px;
+	font-size: 16px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 1s;
+}
+section .txt p {
+	font-size: 1.2em;
+	transition: 1s;
+}
+.general {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+}
+h3 {
+    font-size: 25px;
+}
+a {
+	text-transform: uppercase;
+}
+.line1 {
+	background-color: #4A4949;
+	height: 60px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+li {
+	font-size: 25px;
+}
+.line1:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.line1 ul {
+	list-style: none;
+	margin: 0;
+}
+.line1 > ul > li{
+	float: left;
+	position: relative;
+}
+.line1 ul li a {
+	text-decoration: none;
+	color: #1D1D1D;
+	padding: 15px 20px;
+	display: block;
+}
+.line1 ul li:hover a {
+	background: #C0C0C0;
+}
+.line1 ul ul {
+	position: absolute;
+	padding: 0;
+	min-width: 130px;
+	display: none;
+	top: 100%;
+	left: 0;
+}
+.line1 ul li:hover > ul {
+	display: block;
+} 
+.line1 ul ul li:hover a {
+	background: #4A4949;
+}
+.line1 ul ul li {
+	position: relative;
+}
+h1 {
+    font-size: 50px;
+}
